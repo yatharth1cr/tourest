@@ -1,0 +1,74 @@
+.hero {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.hero .shape {
+  display: block;
+  position: absolute;
+  animation: rotate 8s linear infinite;
+}
+
+.hero .shape-1 {
+  top: 20px;
+  left: 44%;
+}
+
+.hero .shape-2 {
+  top: 20%;
+  right: -50px;
+  animation-delay: 0.25s;
+}
+
+.hero .shape-3 {
+  left: 39%;
+  bottom: 14%;
+  animation-delay: 0.5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-content {
+  margin-bottom: 3rem;
+  .hero-subtitle {
+    font-family: "Comforter Brush", cursive;
+    font-size: 3rem;
+    color: #fcc603;
+  }
+  h2 {
+    font-family: "Abril Fatface", serif;
+    font-size: 4rem;
+  }
+  .hero-text {
+    color: #676c79;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 2rem 0;
+  }
+  .btn {
+    font-weight: 700;
+    padding: 10px 25px;
+    border: 2px solid;
+    border-radius: 6px;
+  }
+  .btn-one {
+    background-color: #029d9d;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  .btn-two {
+    border: 2px solid #676c79;
+  }
+  .btn:hover {
+    background-color: #fff;
+    border: 2px solid;
+    color: #029d9d;
+  }
+}

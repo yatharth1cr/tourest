@@ -1,0 +1,63 @@
+/* common style  */
+.center {
+  text-align: center;
+}
+
+/* Section Title Styling */
+.destination .section-subtitle {
+  margin: 3rem 0 2rem 0;
+  font-size: 2.75rem;
+  font-family: "Comforter Brush", cursive;
+  color: #ffcc00;
+}
+
+.destination .section-title {
+  font-family: "Abril Fatface", serif;
+  margin: 1rem 0 4rem 0;
+  font-size: 3rem;
+}
+
+/* Card Styling */
+.destination-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.destination-card img {
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.destination-card:hover img {
+  transform: scale(1.1);
+}
+
+.destination-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  z-index: 1;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  color: #fff;
+}
+
+.card-subtitle {
+  font-family: "Comforter Brush", cursive;
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
+
+.card-title {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.75rem;
+  margin-top: 5px;
+}

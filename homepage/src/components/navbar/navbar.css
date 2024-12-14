@@ -14,10 +14,7 @@
   font-weight: 500;
 }
 
-/* Navbar List */
-.navbar {
-  display: none;
-}
+/* Navbar List  */
 
 .navbar .open {
   display: flex;

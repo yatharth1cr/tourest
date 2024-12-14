@@ -1,0 +1,36 @@
+.about-us .feature-item h5 {
+  display: flex;
+  align-items: center;
+}
+
+.custom-ff {
+  font-family: "Abril Fatface", serif;
+}
+
+.custom-ff2 {
+  font-family: "Comforter Brush", cursive;
+}
+
+.custom-bg {
+  background-color: #029d9d;
+  border-radius: 50%;
+  color: aliceblue;
+}
+
+.feature-item {
+  color: #878787;
+}
+
+.col-lg-6 .btn {
+  background-color: #029d9d;
+  color: #fff;
+  margin-right: 1rem;
+  font-weight: 700;
+  padding: 10px 25px;
+  border: 2px solid;
+  border-radius: 6px;
+  &:hover {
+    color: #029d9d;
+    border: 2px solid #029d9d;
+  }
+}
