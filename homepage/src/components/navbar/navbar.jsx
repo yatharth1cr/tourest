@@ -12,22 +12,22 @@ function Navbar() {
         <nav className="navbar">
           <ul className="navbar-list d-flex flex-column flex-lg-row">
             <li>
-              <a href="#">Home</a>
+              <a href="#Home">Home</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#AboutUs">AboutUs</a>
             </li>
             <li>
-              <a href="#">Tours</a>
+              <a href="#Tours">Tours</a>
             </li>
             <li>
-              <a href="#">Destinations</a>
+              <a href="#Destinations">Destinations</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="#Blog">Blog</a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <a href="#ContactUs">Contact Us</a>
             </li>
           </ul>
         </nav>
