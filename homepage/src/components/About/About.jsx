@@ -54,7 +54,7 @@ function About() {
                 alteration.
               </p>
             </div>
-            <a href="#" class="btn btn-one">
+            <a href="#BookingNow" class="btn btn-one">
               Booking Now
             </a>
           </div>
