@@ -1,12 +1,12 @@
 import React from "react";
-import "./featured.css"; // Add necessary styling
+import "./featured.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const tours = [
   {
     id: 1,
     image:
-      "https://codewithsadee.github.io/tourest/assets/images/popular-1.jpg", // Replace with real image
+      "https://codewithsadee.github.io/tourest/assets/images/popular-1.jpg",
     days: "12 Days",
     price: "$50.00",
     rating: "★★★★☆",

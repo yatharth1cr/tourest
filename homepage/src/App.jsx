@@ -1,7 +1,9 @@
 import "./App.css";
 import About from "./components/About/About";
+import Blog from "./components/blog/Blog";
 import Destination from "./components/destination/Destination";
 import Featured from "./components/featured/Featured";
+import Footer from "./components/footer/footer";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 
@@ -14,6 +16,8 @@ function App() {
         <Destination />
         <Featured />
         <About />
+        <Blog />
+        <Footer />
       </div>
     </>
   );

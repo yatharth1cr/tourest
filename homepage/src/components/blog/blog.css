@@ -1,0 +1,32 @@
+.custom-color {
+  color: #029d9d;
+}
+
+.custom-color2 {
+  color: #ffc107;
+}
+
+.custom-ff {
+  font-family: "Abril Fatface", serif;
+}
+
+.custom-ff2 {
+  font-family: "Comforter Brush", cursive;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.text-success:hover {
+  text-decoration: underline;
+}
