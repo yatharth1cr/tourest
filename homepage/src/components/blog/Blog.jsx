@@ -4,40 +4,34 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./blog.css";
 const blogData = [
   {
-    image:
-      "https://codewithsadee.github.io/tourest/assets/images/popular-1.jpg",
+    image: "../../assets/popular-1.jpg",
     date: "04 Dec",
     author: "Jony Bristow",
     time: "10:30 AM",
     content:
       "A good traveler has no fixed plans and is not intent on arriving.",
     link: "#",
-    image2:
-      "https://codewithsadee.github.io/tourest/assets/images/author-avatar.png",
+    image2: "../../assets/author-avatar.png",
   },
   {
-    image:
-      "https://codewithsadee.github.io/tourest/assets/images/popular-2.jpg",
+    image: "../../assets/popular-2.jpg",
     date: "04 Dec",
     author: "Jony Bristow",
     time: "10:30 AM",
     content:
       "A good traveler has no fixed plans and is not intent on arriving.",
     link: "#",
-    image2:
-      "https://codewithsadee.github.io/tourest/assets/images/author-avatar.png",
+    image2: "../../assets/author-avatar.png",
   },
   {
-    image:
-      "https://codewithsadee.github.io/tourest/assets/images/popular-3.jpg",
+    image: "../../assets/popular-3.jpg",
     date: "04 Dec",
     author: "Jony Bristow",
     time: "10:30 AM",
     content:
       "A good traveler has no fixed plans and is not intent on arriving.",
     link: "#",
-    image2:
-      "https://codewithsadee.github.io/tourest/assets/images/author-avatar.png",
+    image2: "../../assets/author-avatar.png",
   },
 ];
 

@@ -5,8 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const tours = [
   {
     id: 1,
-    image:
-      "https://codewithsadee.github.io/tourest/assets/images/popular-1.jpg",
+    image: "../../assets/popular-1.jpg",
     days: "12 Days",
     price: "$50.00",
     rating: "★★★★☆",
@@ -17,8 +16,7 @@ const tours = [
   },
   {
     id: 2,
-    image:
-      "https://codewithsadee.github.io/tourest/assets/images/popular-2.jpg",
+    image: "../../assets/popular-2.jpg",
     days: "12 Days",
     price: "$50.00",
     rating: "★★★★☆",
@@ -29,8 +27,7 @@ const tours = [
   },
   {
     id: 3,
-    image:
-      "https://codewithsadee.github.io/tourest/assets/images/popular-3.jpg",
+    image: "../../assets/popular-3.jpg",
     days: "12 Days",
     price: "$50.00",
     rating: "★★★★☆",

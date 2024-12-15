@@ -5,27 +5,27 @@ const destinations = [
   {
     city: "Malé",
     country: "Maldives",
-    img: "https://codewithsadee.github.io/tourest/assets/images/destination-1.jpg",
+    img: "../../assets/destination-1.jpg",
   },
   {
     city: "Bangkok",
     country: "Thailand",
-    img: "https://codewithsadee.github.io/tourest/assets/images/destination-2.jpg",
+    img: "../../assets/destination-2.jpg",
   },
   {
     city: "Kuala Lumpur",
     country: "Malaysia",
-    img: "https://codewithsadee.github.io/tourest/assets/images/destination-3.jpg",
+    img: "../../assets/destination-3.jpg",
   },
   {
     city: "Kathmandu",
     country: "Nepal",
-    img: "https://codewithsadee.github.io/tourest/assets/images/destination-4.jpg",
+    img: "../../assets/destination-4.jpg",
   },
   {
     city: "Jakarta",
     country: "Indonesia",
-    img: "https://codewithsadee.github.io/tourest/assets/images/destination-5.jpg",
+    img: "../../assets/destination-5.jpg",
   },
 ];
 

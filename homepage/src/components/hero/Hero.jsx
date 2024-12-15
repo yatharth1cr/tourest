@@ -9,7 +9,7 @@ function Hero() {
         <img
           key={index}
           className={`shape shape-${index}`}
-          src={`https://codewithsadee.github.io/tourest/assets/images/shape-${index}.png`}
+          src={`../../assets/shape-${index}.png`}
           alt={`shape-${index}`}
         />
       ))}
@@ -38,7 +38,7 @@ function Hero() {
       <figure className="hero-banner">
         <img
           className="w-100"
-          src="https://codewithsadee.github.io/tourest/assets/images/hero-banner.png"
+          src="../../assets/hero-banner.png"
           alt="Hero Banner"
         />
       </figure>

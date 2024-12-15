@@ -63,7 +63,7 @@ function About() {
           <div className="col-lg-6">
             <div className="position-relative d-flex justify-content-center">
               <img
-                src="	https://codewithsadee.github.io/tourest/assets/images/about-banner.png"
+                src="../../assets/about-banner.png"
                 className="top-0 w-100"
                 alt="Traveler 1"
               />
