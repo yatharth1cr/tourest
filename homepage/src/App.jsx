@@ -5,7 +5,7 @@ import Destination from "./components/destination/Destination";
 import Featured from "./components/featured/Featured";
 import Footer from "./components/footer/footer";
 import Hero from "./components/hero/Hero";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/navbar/Nav";
 
 function App() {
   return (

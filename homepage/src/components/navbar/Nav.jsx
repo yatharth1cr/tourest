@@ -1,7 +1,7 @@
 import "./navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Navbar() {
+function Nav() {
   return (
     <header className="header">
       <div className="container d-flex justify-content-between align-items-center">
@@ -39,4 +39,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Nav;
