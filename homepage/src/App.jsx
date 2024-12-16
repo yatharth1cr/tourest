@@ -16,16 +16,16 @@ function App() {
         </section>
 
         <Hero />
-        <section id="AboutUs" className="section about-section">
-          <About />
+        <section id="Destinations" className="section destinations-section">
+          <Destination />
         </section>
 
         <section id="Tours" className="section tours-section">
           <Featured />
         </section>
 
-        <section id="Destinations" className="section destinations-section">
-          <Destination />
+        <section id="AboutUs" className="section about-section">
+          <About />
         </section>
 
         <section id="Blog" className="section blog-section">
