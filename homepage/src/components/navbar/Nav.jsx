@@ -1,39 +1,71 @@
+import React, { useState } from "react";
 import "./navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="container d-flex justify-content-between align-items-center">
         {/* Logo */}
         <h1 className="logo">Tourest</h1>
 
+        {/* Hamburger Menu */}
+        <div className="hamburger" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
         {/* Navigation */}
-        <nav className="navbar">
-          <ul className="navbar-list d-flex flex-column flex-lg-row">
+        <nav className={`navbar ${isOpen ? "open" : ""}`}>
+          <ul className="navbar-list">
             <li>
-              <a href="#Home">Home</a>
+              <a href="#Home" onClick={closeMenu}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="#AboutUs">AboutUs</a>
+              <a href="#AboutUs" onClick={closeMenu}>
+                About Us
+              </a>
             </li>
             <li>
-              <a href="#Tours">Tours</a>
+              <a href="#Tours" onClick={closeMenu}>
+                Tours
+              </a>
             </li>
             <li>
-              <a href="#Destinations">Destinations</a>
+              <a href="#Destinations" onClick={closeMenu}>
+                Destinations
+              </a>
             </li>
             <li>
-              <a href="#Blog">Blog</a>
+              <a href="#Blog" onClick={closeMenu}>
+                Blog
+              </a>
             </li>
             <li>
-              <a href="#ContactUs">Contact Us</a>
+              <a href="#ContactUs" onClick={closeMenu}>
+                Contact Us
+              </a>
             </li>
           </ul>
-        </nav>
 
-        {/* Booking Button */}
-        <button className="btn-primary">Booking Now</button>
+          {/* Booking Button */}
+          <button className="btn-primary" onClick={closeMenu}>
+            Booking Now
+          </button>
+        </nav>
       </div>
     </header>
   );

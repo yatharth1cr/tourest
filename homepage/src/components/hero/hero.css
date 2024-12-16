@@ -1,12 +1,21 @@
+/* Hero Section */
 .hero {
   margin-top: 1rem;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; /* Center content for small screens */
 }
 
+/* Shapes (Decorative Elements) */
 .hero .shape {
   display: block;
   position: absolute;
   animation: rotate 8s linear infinite;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 
 .hero .shape-1 {
@@ -35,40 +44,149 @@
   }
 }
 
+/* Hero Content */
 .hero-content {
+  max-width: 600px;
   margin-bottom: 3rem;
+  text-align: left;
+}
+
+.hero-subtitle {
+  font-family: "Comforter Brush", cursive;
+  font-size: 3rem;
+  color: #fcc603;
+}
+
+.hero-title {
+  font-family: "Abril Fatface", serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  color: #676c79;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 1.5rem 0;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-weight: 700;
+  padding: 10px 25px;
+  border: 2px solid;
+  border-radius: 6px;
+  margin: 0.5rem 1rem 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.btn-one {
+  background-color: #029d9d;
+  color: #fff;
+  border-color: #029d9d;
+}
+
+.btn-two {
+  border-color: #676c79;
+  color: #676c79;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #029d9d;
+  border-color: #029d9d;
+}
+
+/* Hero Banner Image */
+.hero-banner {
+  width: 100%;
+  max-width: 500px;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+
+/* Tablets and Small Screens */
+@media (max-width: 1024px) {
+  .hero-content {
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero .shape {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
   .hero-subtitle {
-    font-family: "Comforter Brush", cursive;
-    font-size: 3rem;
-    color: #fcc603;
+    font-size: 2.2rem;
   }
-  h2 {
-    font-family: "Abril Fatface", serif;
-    font-size: 4rem;
-  }
+
   .hero-text {
-    color: #676c79;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin: 2rem 0;
+    font-size: 1rem;
+    margin: 1rem 0;
   }
+
   .btn {
-    font-weight: 700;
-    padding: 10px 25px;
-    border: 2px solid;
-    border-radius: 6px;
+    font-size: 0.9rem;
+    padding: 8px 20px;
   }
-  .btn-one {
-    background-color: #029d9d;
-    color: #fff;
-    margin-right: 1rem;
+
+  .hero .shape {
+    display: none; /* Hide shapes on mobile for simplicity */
   }
-  .btn-two {
-    border: 2px solid #676c79;
+
+  .hero-banner {
+    max-width: 350px;
   }
-  .btn:hover {
-    background-color: #fff;
-    border: 2px solid;
-    color: #029d9d;
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .hero-text {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 6px 15px;
   }
 }

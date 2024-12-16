@@ -11,13 +11,30 @@ function App() {
   return (
     <>
       <div className="App">
-        <Navbar />
+        <section id="Home" className="section home-section">
+          <Navbar />
+        </section>
+
         <Hero />
-        <Destination />
-        <Featured />
-        <About />
-        <Blog />
-        <Footer />
+        <section id="AboutUs" className="section about-section">
+          <About />
+        </section>
+
+        <section id="Tours" className="section tours-section">
+          <Featured />
+        </section>
+
+        <section id="Destinations" className="section destinations-section">
+          <Destination />
+        </section>
+
+        <section id="Blog" className="section blog-section">
+          <Blog />
+        </section>
+
+        <section id="ContactUs" className="section contact-section">
+          <Footer />
+        </section>
       </div>
     </>
   );

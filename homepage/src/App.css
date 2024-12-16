@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Abril+Fatface&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
