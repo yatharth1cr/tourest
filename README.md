@@ -13,7 +13,7 @@
   Designed a mobile-friendly navbar with a toggle menu using React state.
 
 - 🧭 **Smooth Scrolling**  
-  Enabled seamless scrolling for improved user experience.
+  Enabled seamless scrolling for improved user experience. 
 
 - 💌 **Newsletter Subscription**  
   Integrated a subscription input field for collecting user emails.
