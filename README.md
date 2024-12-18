@@ -9,7 +9,7 @@
 
 ## **Features**
 
-- 🌟 **Responsive Navigation Bar**  
+- 🌟 **Responsive Navigation Bar** 
   Designed a mobile-friendly navbar with a toggle menu using React state.
 
 - 🧭 **Smooth Scrolling**  
