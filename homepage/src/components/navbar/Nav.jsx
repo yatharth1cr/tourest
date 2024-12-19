@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,9 @@ function Nav() {
     <header className="header">
       <div className="container d-flex justify-content-between align-items-center">
         {/* Logo */}
-        <h1 className="logo">Tourest</h1>
+        <h1 className="logo ">
+          <a href="/">Tourest</a>
+        </h1>
 
         {/* Hamburger Menu */}
         <div className="hamburger" onClick={toggleMenu}>
@@ -30,7 +33,7 @@ function Nav() {
         <nav className={`navbar ${isOpen ? "open" : ""}`}>
           <ul className="navbar-list">
             <li>
-              <a href="#Home" onClick={closeMenu}>
+              <a href="/" onClick={closeMenu}>
                 Home
               </a>
             </li>
@@ -63,7 +66,9 @@ function Nav() {
 
           {/* Booking Button */}
           <button className="btn-primary" onClick={closeMenu}>
-            Booking Now
+            <Link to="/booking" className="booking-button">
+              Booking Now
+            </Link>
           </button>
         </nav>
       </div>

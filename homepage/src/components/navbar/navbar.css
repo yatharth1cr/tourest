@@ -12,8 +12,41 @@
 /* Logo Styles */
 .logo {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
+  text-decoration: none;
   margin: 0;
+  color: #fff;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Booking Button */
+.btn-primary {
+  border: none;
+  color: #029d9d;
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem 1.75rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Booking Button Link */
+.booking-button {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Navbar List */
@@ -108,7 +141,6 @@
     text-align: center;
   }
 
-  /* Booking Button in Navbar */
   .navbar .btn-primary {
     margin-top: 1rem;
   }
