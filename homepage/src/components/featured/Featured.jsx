@@ -43,7 +43,7 @@ function Featured() {
     <section className="featured-tours py-5">
       <div className="container text-center">
         <p className="text-warning custom-ff2 fs-1">Featured Tours</p>
-        <h2 className="mb-4 custom-ff">Most Popular Tours</h2>
+        <h2 className="mb-4 custom-ff fs-1">Most Popular Tours</h2>
         <div className="row gy-4">
           {tours.map((tour) => (
             <div key={tour.id} className="col-md-4">

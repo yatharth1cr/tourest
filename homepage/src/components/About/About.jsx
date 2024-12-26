@@ -21,7 +21,7 @@ function About() {
             <div className="feature-item mb-3">
               <h5 className="fw-bold">
                 <span className=" custom-bgs p-3 me-2">
-                  <i class="fa-solid fa-compass"></i>
+                  <i className="fa-solid fa-compass"></i>
                 </span>
                 Tour guide
               </h5>
@@ -33,7 +33,7 @@ function About() {
             <div className="feature-item mb-3">
               <h5 className="fw-bold">
                 <span className="custom-bgs p-3 me-2">
-                  <i class="fa-solid fa-briefcase"></i>
+                  <i className="fa-solid fa-briefcase"></i>
                 </span>
                 Friendly price
               </h5>
@@ -45,7 +45,7 @@ function About() {
             <div className="feature-item mb-3">
               <h5 className="fw-bold">
                 <span className=" custom-bgs p-3 me-2">
-                  <i class="fa-solid fa-umbrella"></i>
+                  <i className="fa-solid fa-umbrella"></i>
                 </span>
                 Reliable tour
               </h5>
@@ -54,7 +54,7 @@ function About() {
                 alteration.
               </p>
             </div>
-            <a href="#BookingNow" class="btn btn-one">
+            <a href="#BookingNow" className="btn btn-one">
               Booking Now
             </a>
           </div>

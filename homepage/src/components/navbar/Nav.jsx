@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // Get current location
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -18,8 +19,10 @@ function Nav() {
     <header className="header">
       <div className="container d-flex justify-content-between align-items-center">
         {/* Logo */}
-        <h1 className="logo ">
-          <a href="/">Tourest</a>
+        <h1 className="logo">
+          <a href="/" onClick={closeMenu}>
+            Tourest
+          </a>
         </h1>
 
         {/* Hamburger Menu */}
@@ -30,47 +33,51 @@ function Nav() {
         </div>
 
         {/* Navigation */}
-        <nav className={`navbar ${isOpen ? "open" : ""}`}>
-          <ul className="navbar-list">
-            <li>
-              <a href="/" onClick={closeMenu}>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#AboutUs" onClick={closeMenu}>
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="#Tours" onClick={closeMenu}>
-                Tours
-              </a>
-            </li>
-            <li>
-              <a href="#Destinations" onClick={closeMenu}>
-                Destinations
-              </a>
-            </li>
-            <li>
-              <a href="#Blog" onClick={closeMenu}>
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="#ContactUs" onClick={closeMenu}>
-                Contact Us
-              </a>
-            </li>
-          </ul>
+        {location.pathname !== "/booking" && (
+          <nav className={`navbar ${isOpen ? "open" : ""}`}>
+            <ul className="navbar-list">
+              <li>
+                <a href="/" onClick={closeMenu}>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#Destinations" onClick={closeMenu}>
+                  Destinations
+                </a>
+              </li>
+              <li>
+                <a href="#Tours" onClick={closeMenu}>
+                  Tours
+                </a>
+              </li>
+              <li>
+                <a href="#AboutUs" onClick={closeMenu}>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#Blog" onClick={closeMenu}>
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="#ContactUs" onClick={closeMenu}>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        )}
 
-          {/* Booking Button */}
-          <button className="btn-primary" onClick={closeMenu}>
-            <Link to="/booking" className="booking-button">
+        {/* Booking Button */}
+        {location.pathname !== "/booking" && (
+          <Link to="/booking" className="booking-button">
+            <button className="btn-primary" onClick={closeMenu}>
               Booking Now
-            </Link>
-          </button>
-        </nav>
+            </button>
+          </Link>
+        )}
       </div>
     </header>
   );
