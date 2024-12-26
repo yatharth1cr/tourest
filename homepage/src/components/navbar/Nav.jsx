@@ -15,25 +15,42 @@ function Nav() {
     setIsOpen(false);
   };
 
+  // Determine whether to show "Back to HomePage" button
+  const showBackToHome = location.pathname !== "/";
+
+  // Determine whether to show full navbar content
+  const showNavbarContent = location.pathname === "/";
+
   return (
     <header className="header">
       <div className="container d-flex justify-content-between align-items-center">
         {/* Logo */}
         <h1 className="logo">
-          <a href="/" onClick={closeMenu}>
+          <Link to="/" onClick={closeMenu}>
             Tourest
-          </a>
+          </Link>
         </h1>
 
-        {/* Hamburger Menu */}
-        <div className="hamburger" onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        {/* Back to HomePage Button */}
+        {showBackToHome && (
+          <h1 className="logo" style={{ padding: "0.5rem" }}>
+            <Link to="/" onClick={closeMenu}>
+              Back to HomePage
+            </Link>
+          </h1>
+        )}
 
-        {/* Navigation */}
-        {location.pathname !== "/booking" && (
+        {/* Hamburger Menu (only on home page) */}
+        {showNavbarContent && (
+          <div className="hamburger" onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        )}
+
+        {/* Navigation (only on home page) */}
+        {showNavbarContent && (
           <nav className={`navbar ${isOpen ? "open" : ""}`}>
             <ul className="navbar-list">
               <li>
@@ -70,8 +87,8 @@ function Nav() {
           </nav>
         )}
 
-        {/* Booking Button */}
-        {location.pathname !== "/booking" && (
+        {/* Booking Button (only on home page) */}
+        {showNavbarContent && (
           <Link to="/booking" className="booking-button">
             <button className="btn-primary" onClick={closeMenu}>
               Booking Now

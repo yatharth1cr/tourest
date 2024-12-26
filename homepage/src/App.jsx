@@ -52,6 +52,12 @@ const router = createBrowserRouter([
         <Booking />,
       </>
     ),
+    errorElement: (
+      <>
+        <Navbar />
+        <Error />,
+      </>
+    ),
   },
 ]);
 
