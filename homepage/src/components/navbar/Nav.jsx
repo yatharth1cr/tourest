@@ -54,9 +54,9 @@ function Nav() {
           <nav className={`navbar ${isOpen ? "open" : ""}`}>
             <ul className="navbar-list">
               <li>
-                <a href="/" onClick={closeMenu}>
+                <Link to="/" onClick={closeMenu}>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#Destinations" onClick={closeMenu}>
