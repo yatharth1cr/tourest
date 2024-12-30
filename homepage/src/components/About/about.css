@@ -1,8 +1,14 @@
+/* About Us Section */
 .about-us .feature-item h5 {
   display: flex;
   align-items: center;
 }
 
+.feature-item {
+  color: #878787;
+}
+
+/* Custom Font Families */
 .custom-ff {
   font-family: "Abril Fatface", serif;
 }
@@ -11,26 +17,30 @@
   font-family: "Comforter Brush", cursive;
 }
 
+/* Custom Background Styles */
 .custom-bgs {
   background-color: #029d9d;
   border-radius: 50%;
-  color: aliceblue;
+  color: #fff;
 }
 
-.feature-item {
-  color: #878787;
-}
-
-.col-lg-6 .btn {
+/* Button Styles */
+.btn-one {
   background-color: #029d9d;
   color: #fff;
-  margin-right: 1rem;
   font-weight: 700;
   padding: 10px 25px;
-  border: 2px solid;
   border-radius: 6px;
-  &:hover {
-    color: #029d9d;
-    border: 2px solid #029d9d;
-  }
+  transition: color 0.3s, border 0.3s;
+  margin-right: 1rem;
+}
+
+.btn-one:hover {
+  color: #029d9d;
+  border: 2px solid #029d9d;
+}
+
+/* Dark Mode Styling */
+body.dark-mode p.dark-white {
+  color: #fff !important;
 }

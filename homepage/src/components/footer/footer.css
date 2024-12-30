@@ -1,7 +1,6 @@
 /* Footer General Styles */
 .custom-bg {
   background-color: #17233f;
-  border-radius: 0;
 }
 
 .custom-bg2 {
@@ -19,6 +18,7 @@ footer h5 {
 
 footer ul {
   padding: 0;
+  list-style: none;
 }
 
 footer ul li {
@@ -27,6 +27,7 @@ footer ul li {
 
 footer a {
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 footer p {
@@ -34,10 +35,7 @@ footer p {
 }
 
 /* Newsletter Input */
-footer .input-group input {
-  border-radius: 0;
-}
-
+footer .input-group input,
 footer .input-group .btn {
   border-radius: 0;
 }
@@ -45,29 +43,26 @@ footer .input-group .btn {
 /* Footer Bottom Section */
 footer .text-center {
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 footer .text-center h3 {
   font-size: 1.5rem;
 }
 
-footer .text-center a {
-  transition: color 0.3s ease;
-}
-
-footer .text-center a:hover {
-  color: #029d9d;
-}
-
 footer .social-icons a {
   font-size: 1.2rem;
   margin-right: 1rem;
   color: #fff;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 footer .social-icons a:hover {
   transform: scale(1.1);
+  color: #029d9d;
 }
 
 /* Responsive Design */
@@ -81,11 +76,11 @@ footer .social-icons a:hover {
 
   footer .text-center {
     flex-direction: column;
-    gap: 1rem;
   }
 
   footer .text-center h3 {
     order: -1;
+    font-size: 1.3rem;
   }
 
   footer .social-icons {
@@ -111,17 +106,10 @@ footer .social-icons a:hover {
     flex-direction: column;
   }
 
-  footer .input-group input {
+  footer .input-group input,
+  footer .input-group .btn {
     margin-bottom: 0.5rem;
     border-radius: 4px;
-  }
-
-  footer .input-group .btn {
-    border-radius: 4px;
-  }
-
-  footer .text-center {
-    gap: 1rem;
   }
 
   footer .text-center h3 {

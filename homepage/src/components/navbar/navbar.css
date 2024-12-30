@@ -71,25 +71,6 @@
   color: #ffc107;
 }
 
-/* Booking Button */
-.btn-primary {
-  border: none;
-  color: #029d9d;
-  background-color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 0.75rem 1.75rem;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 0.5rem;
-  text-align: center;
-  margin-left: 1rem;
-}
-
-.btn-primary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 /* Hamburger Menu */
 .hamburger {
   display: none;
@@ -103,6 +84,14 @@
   width: 25px;
   margin: 3px 0;
   transition: 0.3s;
+}
+
+/* Dark Mode Button */
+button#toggle-dark-mode {
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  margin-left: 1rem;
 }
 
 /* Responsive Design */
@@ -146,7 +135,7 @@
   }
 }
 
-/* Extra Small Devices: Adjust font sizes */
+/* Extra Small Devices */
 @media (max-width: 480px) {
   .logo {
     font-size: 1.5rem;

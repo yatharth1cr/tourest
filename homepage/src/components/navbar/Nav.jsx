@@ -5,7 +5,8 @@ import { Link, useLocation } from "react-router-dom";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // Get current location
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,8 +16,11 @@ function Nav() {
     setIsOpen(false);
   };
 
-  // Determine whether to show "Back to HomePage" button
-  const showBackToHome = location.pathname !== "/";
+  // Toggle Dark Mode
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+    document.body.classList.toggle("dark-mode");
+  };
 
   // Determine whether to show full navbar content
   const showNavbarContent = location.pathname === "/";
@@ -24,21 +28,17 @@ function Nav() {
   return (
     <header className="header">
       <div className="container d-flex justify-content-between align-items-center">
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+
         {/* Logo */}
         <h1 className="logo">
           <Link to="/" onClick={closeMenu}>
             Tourest
           </Link>
         </h1>
-
-        {/* Back to HomePage Button */}
-        {showBackToHome && (
-          <h1 className="logo" style={{ padding: "0.5rem" }}>
-            <Link to="/" onClick={closeMenu}>
-              Back to HomePage
-            </Link>
-          </h1>
-        )}
 
         {/* Hamburger Menu (only on home page) */}
         {showNavbarContent && (
@@ -54,9 +54,9 @@ function Nav() {
           <nav className={`navbar ${isOpen ? "open" : ""}`}>
             <ul className="navbar-list">
               <li>
-                <Link to="/" onClick={closeMenu}>
+                <a href="#Home" onClick={closeMenu}>
                   Home
-                </Link>
+                </a>
               </li>
               <li>
                 <a href="#Destinations" onClick={closeMenu}>
@@ -88,13 +88,22 @@ function Nav() {
         )}
 
         {/* Booking Button (only on home page) */}
-        {showNavbarContent && (
-          <Link to="/booking" className="booking-button">
-            <button className="btn-primary" onClick={closeMenu}>
-              Booking Now
-            </button>
-          </Link>
-        )}
+        <div className="d-flex  align-items-center justify-content-betweenx`x`">
+          {showNavbarContent && (
+            <Link to="/booking" className="booking-button">
+              <button className="btn-primary" onClick={closeMenu}>
+                Booking Now
+              </button>
+            </Link>
+          )}
+
+          {/* Dark Mode Toggle */}
+          <button id="toggle-dark-mode" onClick={toggleDarkMode}>
+            <span id="theme-icon" className="material-icons">
+              {isDarkMode ? "wb_sunny" : "nights_stay"}
+            </span>
+          </button>
+        </div>
       </div>
     </header>
   );

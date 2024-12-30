@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./blog.css";
+
 const blogData = [
   {
     image: "../../assets/popular-1.jpg",
@@ -47,10 +48,7 @@ function Blog() {
       <div className="row g-4">
         {blogData.map((blog, index) => (
           <div className="col-md-4" key={index}>
-            <div
-              className="card shadow-sm border-0"
-              style={{ borderRadius: "12px", overflow: "hidden" }}
-            >
+            <div className="card shadow-sm border-0 rounded-3">
               <div className="position-relative">
                 <img
                   src={blog.image}
@@ -58,14 +56,10 @@ function Blog() {
                   className="w-100"
                   style={{ height: "250px", objectFit: "cover" }}
                 />
-                <div
-                  className="position-absolute top-0 start-0 bg-warning text-white px-3 py-1 fw-bold"
-                  style={{ borderBottomRightRadius: "8px" }}
-                >
+                <div className="position-absolute top-0 start-0 bg-warning text-white px-3 py-1 fw-bold rounded-end">
                   <i className="fa-solid fa-clock me-1"></i> {blog.date}
                 </div>
               </div>
-
               <div className="p-3">
                 <div className="d-flex align-items-center mb-2">
                   <img
@@ -90,7 +84,6 @@ function Blog() {
                 >
                   {blog.content}
                 </p>
-
                 <a
                   href={blog.link}
                   className="fw-bold text-decoration-none custom-color"

@@ -14,10 +14,10 @@ body {
 }
 
 .form-container {
-  margin: 4rem 0 0 0;
+  margin-top: 3rem;
   width: 100%;
   max-width: 600px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -44,7 +44,8 @@ label {
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
+  color: #333;
 }
 
 input,
@@ -65,7 +66,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border: 1px solid #037d7d;
+  border-color: #037d7d;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
 }
 
@@ -78,11 +79,11 @@ textarea:focus {
   font-size: 16px;
   cursor: pointer;
   width: 100%;
+  transition: background-color 0.3s ease;
 }
 
 .form-button:hover {
   background-color: #037d7d;
-  transition: background-color 0.3s ease;
 }
 
 .form-button:active {

@@ -1,20 +1,19 @@
-/* common style  */
+/* Common Style */
 .center {
   text-align: center;
 }
 
 /* Section Title Styling */
 .destination .section-subtitle {
-  margin: 3rem 0 2rem 0;
   font-size: 2.75rem;
   font-family: "Comforter Brush", cursive;
   color: #ffcc00;
 }
 
 .destination .section-title {
-  font-family: "Abril Fatface", serif;
-  margin: 1rem 0 4rem 0;
+  margin-bottom: 2rem;
   font-size: 3rem;
+  font-family: "Abril Fatface", serif;
 }
 
 /* Card Styling */
@@ -38,7 +37,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
   z-index: 1;
 }
 
@@ -51,13 +50,13 @@
 }
 
 .card-subtitle {
-  font-family: "Comforter Brush", cursive;
   font-size: 1.5rem;
+  font-family: "Comforter Brush", cursive;
   color: #ffcc00;
 }
 
 .card-title {
-  font-family: "Abril Fatface", serif;
-  font-size: 1.75rem;
   margin-top: 5px;
+  font-size: 1.75rem;
+  font-family: "Abril Fatface", serif;
 }

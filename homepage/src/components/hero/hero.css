@@ -5,17 +5,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center; /* Center content for small screens */
+  text-align: center;
 }
 
-/* Shapes (Decorative Elements) */
+/* Decorative Shapes */
 .hero .shape {
-  display: block;
   position: absolute;
-  animation: rotate 8s linear infinite;
   width: 50px;
   height: 50px;
   object-fit: contain;
+  animation: rotate 8s linear infinite;
 }
 
 .hero .shape-1 {
@@ -119,7 +118,7 @@
 /* Tablets and Small Screens */
 @media (max-width: 1024px) {
   .hero-content {
-    text-align: center; /* Center text for smaller screens */
+    text-align: center;
   }
 
   .hero-buttons {
@@ -163,7 +162,7 @@
   }
 
   .hero .shape {
-    display: none; /* Hide shapes on mobile for simplicity */
+    display: none;
   }
 
   .hero-banner {

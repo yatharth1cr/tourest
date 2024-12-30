@@ -1,3 +1,4 @@
+/* Custom Colors */
 .custom-color {
   color: #029d9d;
 }
@@ -6,6 +7,7 @@
   color: #ffc107;
 }
 
+/* Custom Font Families */
 .custom-ff {
   font-family: "Abril Fatface", serif;
 }
@@ -14,17 +16,13 @@
   font-family: "Comforter Brush", cursive;
 }
 
+/* Card Styling */
 .card {
   transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
   transform: translateY(-10px);
-}
-
-.card img {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
 .text-success:hover {
