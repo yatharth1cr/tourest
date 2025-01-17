@@ -17,22 +17,22 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
-        <section id="Home" className="section home-section">
+        <section id="Home">
           <Hero />
         </section>
-        <section id="Destinations" className="section destinations-section">
+        <section id="Destinations">
           <Destination />
         </section>
-        <section id="Tours" className="section tours-section">
+        <section id="Tours">
           <Featured />
         </section>
-        <section id="AboutUs" className="section about-section">
+        <section id="AboutUs">
           <About />
         </section>
-        <section id="Blog" className="section blog-section">
+        <section id="Blog">
           <Blog />
         </section>
-        <section id="ContactUs" className="section contact-section">
+        <section id="ContactUs">
           <Footer />
         </section>
       </>
